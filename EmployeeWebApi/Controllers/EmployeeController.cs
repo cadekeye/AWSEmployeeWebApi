@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeWebApi.Controllers
 {
-    [EnableCors("_myPolicy")]
     [Route("Employee")]
     [ApiController]
     public class EmployeeController : ControllerBase
