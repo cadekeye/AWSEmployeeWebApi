@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\bin\Release\netstandard2.0\DataAccessLayer.deps.json
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\bin\Release\netstandard2.0\DataAccessLayer.runtimeconfig.json
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\bin\Release\netstandard2.0\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\bin\Release\netstandard2.0\DataAccessLayer.dll
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\bin\Release\netstandard2.0\DataAccessLayer.pdb
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\obj\Release\netstandard2.0\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\obj\Release\netstandard2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\obj\Release\netstandard2.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\obj\Release\netstandard2.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\obj\Release\netstandard2.0\DataAccessLayer.dll
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\obj\Release\netstandard2.0\DataAccessLayer.pdb
+C:\Users\User\source\repos\EmployeeWebApi\DataAccessLayer\obj\Release\netstandard2.0\DataAccessLayer.genruntimeconfig.cache
