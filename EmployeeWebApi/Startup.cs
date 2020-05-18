@@ -36,6 +36,16 @@ namespace EmployeeWebApi
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddTransient<IEmployeeListService, EmployeeListService>();
+
+            services.AddCors(option =>
+            {
+                option.AddPolicy("_myPolicy", builder =>
+                 {
+                     builder.WithOrigins("http://localhost:3000", "http://localhost:4200", "http://localhost:3001")
+                     .AllowAnyHeader()
+                     .AllowAnyMethod();
+                 });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

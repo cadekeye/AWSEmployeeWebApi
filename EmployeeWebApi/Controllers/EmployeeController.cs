@@ -4,11 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using EmployeeWebApi.Models;
 using EmployeeWebApi.Services;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeWebApi.Controllers
 {
+    [EnableCors("_myPolicy")]
     [Route("Employee")]
     [ApiController]
     public class EmployeeController : ControllerBase
