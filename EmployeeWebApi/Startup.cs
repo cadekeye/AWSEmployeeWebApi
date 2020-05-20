@@ -17,6 +17,7 @@ namespace EmployeeWebApi
 {
     public class Startup
     {
+        public string ConnectionStringName { get; set; } = "EmployeeConn";
         public const string AppS3BucketKey = "AppS3Bucket";
 
         public Startup(IConfiguration configuration)
@@ -37,15 +38,10 @@ namespace EmployeeWebApi
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddTransient<IEmployeeListService, EmployeeListService>();
 
-            //services.AddCors(option =>
-            //{
-            //    option.AddPolicy("_myPolicy", builder =>
-            //     {
-            //         builder.WithOrigins("http://localhost:3000", "http://localhost:4200", "http://localhost:3001")
-            //         .AllowAnyHeader()
-            //         .AllowAnyMethod();
-            //     });
-            //});
+            services.AddCors(option =>
+            {
+                option.AddPolicy("_myPolicy", builder => builder.AllowAnyOrigin());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline
@@ -56,13 +52,13 @@ namespace EmployeeWebApi
                 app.UseDeveloperExceptionPage();
             }
 
-            // app.UseCors("_myPolicy");
-
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {
