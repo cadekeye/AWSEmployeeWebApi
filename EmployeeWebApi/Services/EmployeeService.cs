@@ -26,8 +26,8 @@ namespace EmployeeWebApi.Services
 
         public Task InsertEmployee(EmployeeModel employee)
         {
-            string sql = $"insert into dbo.Employee (EmployeeId,FirstName,LastName,Address1,Address2,Town,PostCode,DepartmentId)" +
-                "values(@EmployeeId,@FirstName,@LastName,@Address1,@Address2,@Town,@PostCode,@DepartmentId)";
+            string sql = $"insert into dbo.Employee (EmployeeId,FirstName,LastName,Address1,Address2,Town,PostCode,DepartmentId,EmailAddress)" +
+                "values(@EmployeeId,@FirstName,@LastName,@Address1,@Address2,@Town,@PostCode,@DepartmentId,@EmailAddress)";
 
             return _sqlDataAccess.ProcessData(sql, employee);
         }
